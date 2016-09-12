@@ -3535,6 +3535,7 @@
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		background: #312450;
+		background-image: linear-gradient(to left, black 0%,white 100%), url('images/piraatti.png');
 		cursor: default;
 		height: 100vh;
 		left: 0;
