@@ -1,7 +1,12 @@
 <head>
   <title>toreni.us</title>
+  <script>
+	function myFunction() {
+		alert("The video has ended");
+	}
+  </script>
 </head>
 
-<iframe width="100%" height="100%"
+<iframe width="100%" height="100%" onended="myFunction()"
 src="https://www.youtube.com/embed/i648EZEQbug?autoplay=1">
-</iframe> 
+</iframe>
