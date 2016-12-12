@@ -13,6 +13,7 @@ page[4]="http://toreni.us/5/";
 page[5]="http://toreni.us/6/";
 page[6]="http://toreni.us/7/";
 page[7]="http://toreni.us/8/";
+page[8]="http://toreni.us/9/";
 
 function rndnumber(){
 	var randscript = -1;
