@@ -2,10 +2,12 @@
 <!-- The JavaScript Source!! http://www.javascriptsource.com -->
 
 <!-- Begin
-var howMany = -1;  // max number of items listed below
+var howMany = 2;  // max number of items listed below
 var page = new Array(howMany+1);
 
-page[0]="http://toreni.us/1/index.html";
+page[0]="http://toreni.us/";
+page[1]="http://toreni.us/";
+page[2]="http://toreni.us/";
 
 function rndnumber(){
 	var randscript = -1;
