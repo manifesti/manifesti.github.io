@@ -30,6 +30,9 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          player.loadVideoById(randomVideoUrl);
+          player.loadVideoById(newVideoUrl());
         }
 	  }
+	  function newVideoUrl() {
+        return videos[Math.floor(Math.random() * videos.length)];
+      }
