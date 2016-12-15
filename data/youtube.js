@@ -29,6 +29,6 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          location.reload(true);
+          loadVideoById(randomVideoUrl, 0, "highres");
         }
 	  }
