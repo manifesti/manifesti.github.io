@@ -30,6 +30,6 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          loadVideoById(randomVideoUrl, 0, "highres");
+          player.loadVideoById(randomVideoUrl);
         }
 	  }
