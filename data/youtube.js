@@ -9,8 +9,8 @@
 	  var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvnaf-_Eg",
 	  "umCq5V36aT4", "mNJcTqHKdZE", "4_uggscguzs", "de1oJfoDU2c", "C_ysRL4JgQE", "sP4o9veYykg",
 	  "Dbhss_w9Lsc", "z9Ke1aBnQgQ", "odAqNXLipNA", "MOSlaX19Zw8", "Tu14joqyqP4", "LKkGX0T3MdE",
-	  "CSnmyJGNo6U", "W0mQBnvVARk", "FkhpxmF8s-w", "o7eSBwEBwOk", "6c16QdPzS7o", "4Fu_uld7SIQ",
-	  "lyLZmds4QWo", "dg69fRRyynE", "gzN6EMspLAU", "NDbEgRPQHA0", "zF66J4FeLYo", "bBnTrU4XE8M"];
+	  "CSnmyJGNo6U", "W0mQBnvVARk", "FkhpxmF8s-w", "o7eSBwEBwOk", "6c16QdPzS7o","lyLZmds4QWo", 
+	  "dg69fRRyynE", "gzN6EMspLAU", "NDbEgRPQHA0", "zF66J4FeLYo", "bBnTrU4XE8M"];
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
       function onYouTubeIframeAPIReady() {
@@ -18,6 +18,7 @@
           height: '100%',
           width: '100%',
           videoId: randomVideoUrl,
+		  enablejsapi: 1,
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
