@@ -12,7 +12,7 @@
 	  "CSnmyJGNo6U", "W0mQBnvVARk", "FkhpxmF8s-w", "o7eSBwEBwOk", "6c16QdPzS7o","lyLZmds4QWo", 
 	  "dg69fRRyynE", "gzN6EMspLAU", "NDbEgRPQHA0", "zF66J4FeLYo", "bBnTrU4XE8M", "OMyiqDl_v_s",
 	  "DKfwuuas46I", "G7XQ4O9X6eM", "XAoWwvOOcUQ", "DscImAQkdow", "VRR6etuZTfU", "XAoWwvOOcUQ",
-	  "WY87o9IZXWg", "SXKDxS3aums", "RvYn3XRqfnA", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo"];
+	  "WY87o9IZXWg", "RvYn3XRqfnA", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo"];
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
       function onYouTubeIframeAPIReady() {
