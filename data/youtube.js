@@ -19,8 +19,8 @@
 	  
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '100%',
-          width: '100%',
+          height: '90%',
+          width: '90%',
           videoId: randomVideoUrl,
 		  enablejsapi: 1,
           events: {
@@ -47,9 +47,10 @@
 			videos[i] = videos[j];
 			videos[j] = temp;
 		}
+	  }
     return videos;
 	  }
-	  function nextVideo() {
+	function nextVideo() {
 		  player.loadVideoById(videos[++1])
 	  }
 	function lastVideo() {
