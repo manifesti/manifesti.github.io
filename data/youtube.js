@@ -52,7 +52,7 @@
 	  }
 	  
 	  
-	var currentVideoId = player.getVideoData()['video_id']
+	var currentVideoId = player.getVideoData()['video_id'];
 	  
 	function nextVideo() {
 		  document.getElementById("player").innerHTML = player.loadVideoById(videos.indexOf(currentVideoId)+1);
