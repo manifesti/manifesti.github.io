@@ -17,11 +17,10 @@
 	  "x6ZKufGsVV4"];
 	  randomizeArray(videos);
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-	  var currentVideoId = player.getVideoData()['video_id']
 	  
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '100%',
+          height: '98%',
           width: '100%',
           videoId: randomVideoUrl,
 		  enablejsapi: 1,
@@ -36,7 +35,7 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          player.loadVideoById(videoUrl());
+          player.loadVideoById(nextVideo());
         }
 	  }
 	  function newVideoUrl() {
@@ -51,6 +50,10 @@
 		}
     return array;
 	  }
+	  
+	  
+	var currentVideoId = player.getVideoData()['video_id']
+	  
 	function nextVideo() {
 		  document.getElementById("player").innerHTML = player.loadVideoById(videos.indexOf(currentVideoId)+1);
 	  }
