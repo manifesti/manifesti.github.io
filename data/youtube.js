@@ -55,7 +55,9 @@
 	  
 	function nextVideo() {
 		  document.getElementById("player").innerHTML = player.loadVideoById(videos[videos.indexOf(currentVideoId)+1]);
+		  var currentVideoId = player.getVideoData()['video_id'];
 	  }
 	function lastVideo() {
 		  document.getElementById("player").innerHTML = player.loadVideoById(videos[videos.indexOf(currentVideoId)-1]);
+		  var currentVideoId = player.getVideoData()['video_id'];
 	  }
