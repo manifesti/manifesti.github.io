@@ -15,7 +15,7 @@
 	  "WY87o9IZXWg", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo", "R9Z9Alr5NWc", "R8LUgJ9gN80",
 	  "7EEH8Wj1OqY", "_s3Lfsn5MV4", "P0IrNQsfL9c", "5w63kym-45E", "4BZgpQ_KoOw", "J0cvJ8ScfQw",
 	  "x6ZKufGsVV4"];
-	  randomizeArray();
+	  randomizeArray(videos);
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
       function onYouTubeIframeAPIReady() {
@@ -41,12 +41,12 @@
 	  function newVideoUrl() {
         return videos[Math.floor(Math.random() * videos.length)];
       }
-	  function randomizeArray(videos) {
-		for (var i = videos.length - 1; i > 0; i--) {
+	  function randomizeArray(array) {
+		for (var i = array.length - 1; i > 0; i--) {
 			var j = Math.floor(Math.random() * (i + 1));
-			var temp = videos[i];
-			videos[i] = videos[j];
-			videos[j] = temp;
+			var temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
 		}
     return videos;
 	  }
