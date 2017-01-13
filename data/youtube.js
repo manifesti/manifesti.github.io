@@ -47,7 +47,6 @@
 			videos[i] = videos[j];
 			videos[j] = temp;
 		}
-	  }
     return videos;
 	  }
 	function nextVideo() {
