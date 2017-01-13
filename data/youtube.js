@@ -15,6 +15,7 @@
 	  "WY87o9IZXWg", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo", "R9Z9Alr5NWc", "R8LUgJ9gN80",
 	  "7EEH8Wj1OqY", "_s3Lfsn5MV4", "P0IrNQsfL9c", "5w63kym-45E", "4BZgpQ_KoOw", "J0cvJ8ScfQw",
 	  "x6ZKufGsVV4"];
+	  randomizeArray();
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
       function onYouTubeIframeAPIReady() {
@@ -34,7 +35,7 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          player.loadVideoById(newVideoUrl());
+          player.loadVideoById(videoUrl());
         }
 	  }
 	  function newVideoUrl() {
@@ -50,8 +51,8 @@
     return videos;
 	  }
 	function nextVideo() {
-		  player.loadVideoById(videos[++1])
+		  document.getElementById("player").innerHTML = player.loadVideoById("P0IrNQsfL9c");
 	  }
 	function lastVideo() {
-		  player.loadVideoById(videos[--1])
+		  document.getElementById("player").innerHTML = player.loadVideoById("P0IrNQsfL9c");
 	  }
