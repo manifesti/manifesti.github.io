@@ -26,7 +26,8 @@
 		  enablejsapi: 1,
           events: {
             'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange,
+	    'getVideoData': getData
           }
         });
       }
