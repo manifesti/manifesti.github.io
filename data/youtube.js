@@ -54,8 +54,8 @@
 	var currentVideoId = player.getVideoData()['video_id'];
 	  
 	function nextVideo() {
-		  document.getElementById("player").innerHTML = player.loadVideoById(videos[videos.indexOf(currentVideoId)+1]);
+		  document.getElementById("player").innerHTML = player.loadVideoById(videos[videos.indexOf(currentVideoId)++1]);
 	  }
 	function lastVideo() {
-		  document.getElementById("player").innerHTML = player.loadVideoById(videos[videos.indexOf(currentVideoId)-1]);
+		  document.getElementById("player").innerHTML = player.loadVideoById(videos[videos.indexOf(currentVideoId)--1]);
 	  }
