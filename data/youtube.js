@@ -40,7 +40,7 @@
 	  function newVideoUrl() {
         return videos[Math.floor(Math.random() * videos.length)];
       }
-	  function randomizeArray(videos[]) {
+	  function randomizeArray(videos) {
 		for (var i = videos.length - 1; i > 0; i--) {
 			var j = Math.floor(Math.random() * (i + 1));
 			var temp = videos[i];
