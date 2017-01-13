@@ -17,6 +17,7 @@
 	  "x6ZKufGsVV4"];
 	  randomizeArray(videos);
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+	  var currentVideoId = player.getVideoData()['video_id']
 	  
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
@@ -51,8 +52,8 @@
     return array;
 	  }
 	function nextVideo() {
-		  document.getElementById("player").innerHTML = player.loadVideoById("P0IrNQsfL9c");
+		  document.getElementById("player").innerHTML = player.loadVideoById(videos.indexOf(currentVideoId)+1);
 	  }
 	function lastVideo() {
-		  document.getElementById("player").innerHTML = player.loadVideoById("P0IrNQsfL9c");
+		  document.getElementById("player").innerHTML = player.loadVideoById(videos.indexOf(currentVideoId)-1);
 	  }
