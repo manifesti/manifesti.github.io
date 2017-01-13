@@ -48,7 +48,7 @@
 			array[i] = array[j];
 			array[j] = temp;
 		}
-    return videos;
+    return array;
 	  }
 	function nextVideo() {
 		  document.getElementById("player").innerHTML = player.loadVideoById("P0IrNQsfL9c");
