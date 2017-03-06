@@ -53,14 +53,16 @@
 	  }
 	function nextIndex() {
 		index++;
-		if (index > videos.length)
+		if (index > videos.length) {
 			index = 0;
+		}
 		return index;
 	}
 	function lastIndex() {
 		index--;
-		if (index < 0)
+		if (index < 0) {
 			index = videos.length;
+		}
 		return index;
 	}
 	function nextVideo() {
