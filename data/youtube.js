@@ -15,7 +15,7 @@
 	  "DKfwuuas46I", "G7XQ4O9X6eM", "XAoWwvOOcUQ", "DscImAQkdow", "VRR6etuZTfU", "XAoWwvOOcUQ",
 	  "WY87o9IZXWg", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo", "R9Z9Alr5NWc", "R8LUgJ9gN80",
 	  "7EEH8Wj1OqY", "_s3Lfsn5MV4", "P0IrNQsfL9c", "5w63kym-45E", "4BZgpQ_KoOw", "J0cvJ8ScfQw",
-	  "x6ZKufGsVV4", "BiEMkVdOBCY", "U5J23g-uH5I", "2g4dakkzsj4", "hSkES0hh_pY", "CoeQt7ZX5Vc"];
+	  "x6ZKufGsVV4", "l3eE-KhY6X8", "U5J23g-uH5I", "2g4dakkzsj4", "hSkES0hh_pY", "CoeQt7ZX5Vc"];
 	  randomizeArray(videos);
 	  var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
@@ -36,7 +36,7 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          player.loadVideoById(nextVideo();
+          player.loadVideoById(nextVideo());
         }
 	  }
 	  function newVideoUrl() {
