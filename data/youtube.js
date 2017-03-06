@@ -36,7 +36,7 @@
       }
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
-          player.loadVideoById(nextVideo());
+          nextVideo();
         }
 	  }
 	  function newVideoUrl() {
