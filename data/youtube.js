@@ -18,13 +18,13 @@ var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvn
 			  "5qQbDGM1fV0", "s6EkPdMit6s"];
 randomizeArray(videos);
 
-var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+var videoIndex = videos[index];
 	  
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
 		height: '96%',
 		width: '100%',
-		videoId: randomVideoUrl,
+		videoId: videoIndex,
 		enablejsapi: 1,
 		events: {
 			'onReady': onPlayerReady,
