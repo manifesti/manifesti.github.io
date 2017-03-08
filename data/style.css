@@ -7,9 +7,10 @@ body {
 	width: 500px;
 	height: 25px;
 	display: flex;
-	margin: 10 auto;
+	margin: auto auto;
+	justify-content: center
 }
 #next, #last {
 	padding: 0% 5%;
-	align-content: center;
+	align-items: center;
 }
