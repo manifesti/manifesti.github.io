@@ -20,7 +20,7 @@ var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
-		height: '96%',
+		height: '95%',
 		width: '100%',
 		videoId: randomVideoUrl,
 		enablejsapi: 1,
