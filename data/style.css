@@ -10,7 +10,7 @@ body {
 	margin: auto auto;
 	justify-content: center
 }
-#next, #last {
+.control_buttons {
 	padding: 0% 5%;
 	align-items: center;
 }
