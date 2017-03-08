@@ -2,15 +2,20 @@
 	<title>toreni.us</title>
 	<link rel="stylesheet" href="data/style.css">
 	<link rel="icon" href="data/running.gif">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <script src="data/youtube.js"></script>
 <div id="controls">
 	<div id="next">
-		<button onclick="lastVideo()">Last</button>
+		<button onclick="lastVideo()">
+			<i class="material-icons">skip_previous</i>
+		</button>
 	</div>
 	<div id="last">
-		<button onclick="nextVideo()">Next</button>
+		<button onclick="nextVideo()">
+			<i class="material-icons">skip_next</i>
+		</button>
 	</div>
 </div>
 <div id="player"></div>
