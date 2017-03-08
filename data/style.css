@@ -5,7 +5,7 @@ body {
 }
 #controls {
 	width: 500px;
-	height: 25px;
+	height: 30px;
 	display: flex;
 	margin: auto auto;
 	justify-content: center
