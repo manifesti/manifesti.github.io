@@ -6,7 +6,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 	  
 var index = 0;
-var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvnaf-_Eg",
+var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvnaf-_Eg", "JsQIqwh7Y8o",
 			  "umCq5V36aT4", "mNJcTqHKdZE", "4_uggscguzs", "de1oJfoDU2c", "C_ysRL4JgQE", "sP4o9veYykg",
 			  "Dbhss_w9Lsc", "z9Ke1aBnQgQ", "odAqNXLipNA", "MOSlaX19Zw8", "Tu14joqyqP4", "LKkGX0T3MdE",
 			  "CSnmyJGNo6U", "W0mQBnvVARk", "FkhpxmF8s-w", "o7eSBwEBwOk", "6c16QdPzS7o", "lyLZmds4QWo",
@@ -15,7 +15,7 @@ var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvn
 			  "WY87o9IZXWg", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo", "R9Z9Alr5NWc", "R8LUgJ9gN80",
 			  "7EEH8Wj1OqY", "_s3Lfsn5MV4", "P0IrNQsfL9c", "7-g__catIIU", "4BZgpQ_KoOw", "J0cvJ8ScfQw",
 			  "x6ZKufGsVV4", "BiEMkVdOBCY", "U5J23g-uH5I", "2g4dakkzsj4", "hSkES0hh_pY", "CoeQt7ZX5Vc",
-			  "5qQbDGM1fV0", "s6EkPdMit6s", "JsQIqwh7Y8o"];
+			  "5qQbDGM1fV0", "s6EkPdMit6s"];
 var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
 	  
 function onYouTubeIframeAPIReady() {
