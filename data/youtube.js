@@ -36,6 +36,7 @@ function onPlayerReady(event) {
 	event.target.playVideo();
 }
 function onPlayerStateChange(event) {
+	playPause(event.data);
 	if (event.data == YT.PlayerState.ENDED) {
 		nextVideo();
 	}
@@ -65,6 +66,18 @@ function lastIndex() {
 		index = videos.length - 1;
 	}
 	return index;
+}
+function playPause(playerStatus) {
+	var asema = document.getElementById("playnappula");
+	if (playerStatus == 1) {
+		asema.innerHTML = '<i class="material-icons">pause</i>';
+		asema.onclick = function(){player.pauseVideo();};
+	} else if (playerStatus == 2) {
+		asema.innerHTML = '<i class="material-icons">play_arrow</i>';
+		asema.onclick = function(){player.playVideo();};
+	} else {
+		asema.innerHTML = 'Loading..'
+	}
 }
 function nextVideo() {
 	player.loadVideoById(videos[nextIndex()]);
