@@ -22,7 +22,7 @@ var videoIndex = videos[index];
 	  
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
-		height: '96%',
+		height: '94%',
 		width: '100%',
 		videoId: videoIndex,
 		enablejsapi: 1,

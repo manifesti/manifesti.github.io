@@ -5,7 +5,7 @@ body {
 }
 #controls {
 	width: 500px;
-	height: 30px;
+	height: 50px;
 	display: flex;
 	margin: auto auto;
 	justify-content: center
@@ -13,4 +13,24 @@ body {
 .control_buttons {
 	padding: 0% 5%;
 	align-items: center;
+}
+.btn {
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  color: #FFFFFF;
+  background: #000000;
+  padding: 10px 20px 10px 20px;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #575757;
+  background-image: -webkit-linear-gradient(top, #575757, #000000);
+  background-image: -moz-linear-gradient(top, #575757, #000000);
+  background-image: -ms-linear-gradient(top, #575757, #000000);
+  background-image: -o-linear-gradient(top, #575757, #000000);
+  background-image: linear-gradient(to bottom, #575757, #000000);
+  text-decoration: none;
 }
