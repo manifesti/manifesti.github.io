@@ -77,6 +77,7 @@ function playPause(playerStatus) {
 		asema.onclick = function(){player.playVideo();};
 	} else {
 		asema.innerHTML = '<i class="material-icons">loop</i>'
+		asema.onclick = function(){player.playVideo();};
 	}
 }
 function nextVideo() {
