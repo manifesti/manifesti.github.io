@@ -10,13 +10,12 @@ var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvn
 			  "umCq5V36aT4", "mNJcTqHKdZE", "4_uggscguzs", "de1oJfoDU2c", "C_ysRL4JgQE", "sP4o9veYykg",
 			  "Dbhss_w9Lsc", "z9Ke1aBnQgQ", "odAqNXLipNA", "MOSlaX19Zw8", "Tu14joqyqP4", "LKkGX0T3MdE",
 			  "CSnmyJGNo6U", "W0mQBnvVARk", "FkhpxmF8s-w", "o7eSBwEBwOk", "6c16QdPzS7o", "lyLZmds4QWo",
-			  "dg69fRRyynE", "gzN6EMspLAU", "NDbEgRPQHA0", "zF66J4FeLYo", "bBnTrU4XE8M", "OMyiqDl_v_s",
-			  "DKfwuuas46I", "G7XQ4O9X6eM", "XAoWwvOOcUQ", "DscImAQkdow", "VRR6etuZTfU", "XAoWwvOOcUQ",
+			  "QbcdZnYVcjw", "gzN6EMspLAU", "NDbEgRPQHA0", "zF66J4FeLYo", "bBnTrU4XE8M", "OMyiqDl_v_s",
+			  "DKfwuuas46I", "G7XQ4O9X6eM", "XAoWwvOOcUQ", "DscImAQkdow", "VRR6etuZTfU", "YZqC32Ed7MM",
 			  "WY87o9IZXWg", "uoHY1wpnLDQ", "Nm-9dLq6Szs", "S1oMZ5sfqAo", "R9Z9Alr5NWc", "R8LUgJ9gN80",
 			  "7EEH8Wj1OqY", "_s3Lfsn5MV4", "P0IrNQsfL9c", "7-g__catIIU", "4BZgpQ_KoOw", "J0cvJ8ScfQw",
 			  "x6ZKufGsVV4", "BiEMkVdOBCY", "U5J23g-uH5I", "2g4dakkzsj4", "hSkES0hh_pY", "CoeQt7ZX5Vc",
-			  "5qQbDGM1fV0", "s6EkPdMit6s", "Cd_31H9qAWU", "iJwhnS3eKco", "Zepq2WOWsqQ", "NWqrHcc6p5M",
-			  "YZqC32Ed7MM", "QbcdZnYVcjw"];
+			  "5qQbDGM1fV0", "s6EkPdMit6s", "Cd_31H9qAWU", "iJwhnS3eKco", "Zepq2WOWsqQ", "NWqrHcc6p5M"];
 randomizeArray(videos);
 
 var videoIndex = videos[index];
