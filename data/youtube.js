@@ -16,7 +16,7 @@ var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvn
 			  "7EEH8Wj1OqY", "_s3Lfsn5MV4", "P0IrNQsfL9c", "7-g__catIIU", "4BZgpQ_KoOw", "J0cvJ8ScfQw",
 			  "x6ZKufGsVV4", "BiEMkVdOBCY", "U5J23g-uH5I", "2g4dakkzsj4", "hSkES0hh_pY", "CoeQt7ZX5Vc",
 			  "5qQbDGM1fV0", "s6EkPdMit6s", "Cd_31H9qAWU", "iJwhnS3eKco", "Zepq2WOWsqQ", "NWqrHcc6p5M",
-			  "kDgyutf023A", "mXhZrU5w1Wo", "s32MKzq9e3U", "xbDok-pJLu0", "5pILkGqOCWs", ""];
+			  "kDgyutf023A", "mXhZrU5w1Wo", "s32MKzq9e3U", "xbDok-pJLu0", "5pILkGqOCWs", "Rvz5GxqLAMk"];
 randomizeArray(videos);
 
 var videoIndex = videos[index];
