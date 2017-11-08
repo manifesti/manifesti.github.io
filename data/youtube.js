@@ -1,12 +1,10 @@
 // load youtube Iframe API
 var tag = document.createElement('script');
-
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // player starts from index 0 in videos
 var index = 0;
-
 // given youtube video IDs
 var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvnaf-_Eg", "JsQIqwh7Y8o",
 			  "umCq5V36aT4", "mNJcTqHKdZE", "4_uggscguzs", "de1oJfoDU2c", "ln_L6995T4E", "sP4o9veYykg",
@@ -21,14 +19,12 @@ var videos = ["i648EZEQbug", "BHdg_0DFHMw", "9XcpMCly1IY", "DKwbZ4LWT9Q", "TQwvn
 			  "kDgyutf023A", "mXhZrU5w1Wo", "s32MKzq9e3U", "xbDok-pJLu0", "5pILkGqOCWs", "Rvz5GxqLAMk"];
 // shuffle the list on page load
 randomizeArray(videos);
-// initial video id to give to player
-var videoIndex = videos[index];
 // initialize player in HTML-div "player"
 function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
-		height: '94%',
+		height: '800', // this worked with % values before, but not anymore. width responds to % so no idea whats up there, and google/API documentation has nothing. pixel-values work, but %-values don't. no obvious CSS-workaround.
 		width: '100%',
-		videoId: videoIndex,
+		videoId: videos[index],
 		enablejsapi: 1,
 		events: {
 			'onReady': onPlayerReady,
@@ -47,7 +43,6 @@ function onPlayerStateChange(event) {
 		nextVideo();
 	}
 }
-
 // function for randomizing the array
 function randomizeArray(array) {
 	for (var i = array.length - 1; i > 0; i--) {
